@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio04.MainPage">
+
+    <StackLayout>
+
+        <StackLayout>
+            <Label Text="Laboratorio 07 - DEPENDECY SERVICES - QUITO"
+                   FontSize="18"
+                   TextColor="Green"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+        <StackLayout>
+            <Button x:Name="Item1" Text="TEXT_TO_SPEECH" />
+            <Button x:Name="Item2" Text="BATTERY" />
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Lector de Código QR"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+            <Button x:Name="btnScannerQR" Text="Leer Qr" Clicked="btnScannerQR_Clicked" />
+            <Entry x:Name="txtResultado" Placeholder="Resultado del QR" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
